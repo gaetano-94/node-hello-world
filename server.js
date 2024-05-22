@@ -4,7 +4,8 @@ const { getRandomQuote } = require('./frasimotivazionali');
 const port = process.env.PORT || 8080;
 const host = process.env.HOST || 'localhost';
 const mex = process.env.MEX || 'Nessun Messaggio';
-http
+
+const server = http
   .createServer(function (req, res) {
     res.writeHead(200, {
       'Content-Type': 'text/html',
